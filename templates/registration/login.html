@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<br><br><br>
+
+<h2><strong>Giriş Yapma</strong></h2>
+
+<br>
+
+{% if user.is_authenticated %}
+<h3 style="padding: 10px;">Hoşgeldin {{user.username}}</h3>
+
+{% else %}
+
+<form method="post" action="{% url 'login' %}">
+<div class="container" style="border: 4px solid rgb(57,112,214); padding: 8px;">
+    <form action="" method="post">
+        {% csrf_token %}
+
+    {% for field in form %}
+    <div class="mb-3">
+        {{field.label_tag}}
+        {{field}}
+    </div>
+    {% endfor %}
+
+    <button type="submit" class="btn btn-primary">Giriş Yap</button>
+    </form>
+
+</div>
+
+</form>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br><br><br>
+
+<h1><strong>Çanakkale Turu Sayfası</strong></h1>
+
+<br>
+
+<div class="row">
+
+<div class="col">
+<div class="card" style="border-color: red; width: 50rem; height: 45rem;">
+    <img src="{% static 'tatilturapp/çanakkale1.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Tur Rotası Bilgisi</strong></h5>
+      <ol>
+      <p class="card-text">Turumuz Çanakkale Deniz Müzesi ile başlayacak , ardından Çanakkale Kilitbahir Kale Müzesi ile devam edecek ve en son Çanakkale Şehitler Abidesi ile son bulucaktır.</p>
+      <p class="card-text">Tur , içinde toplamda 3 tur hocası olacak ve 30 kişilik ekipler halinde gerçekleşecektir.</p>
+      </ol>
+    </div>
+  </div>
+  </div>
+
+  <div class="col">
+  <div class="card" style="width: 50rem; border-color: red; height: 50rem;">
+    <img src="{% static 'tatilturapp/çanakkale2.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Turdaki Dinlenme ve Yemek Yeme Yerleri</strong></h5>
+      <ol>
+      <p class="card-text">İlk ve ikinci gün üç tane ve sonuncu gün de iki tane olmak üzere toplamda sekiz tane dinlenme yeri tur içinde olacaktır.  </p>
+      <p class="card-text">Yemek yeri olarak ise tur içindeki dinlenme yerinde sağlanacak ve her bir mola 90 dakika olacaktır.</p>
+      </ol>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<br><br>
+
+<div class="row">
+
+<div class="col">
+<div class="card" style="width: 50rem; border-color: red; height: 45rem;">
+    <img src="{% static 'tatilturapp/çanakkale3.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Tur Hediyeleri</strong></h5>
+      <ol>
+      <p class="card-text">Tur bitiminde sizlere turdaki gidilen yerler hakkında bilgi kitapçığı , anahtarlık ve bileklik gibi bir sürü hediye sağlanacaktır.</p>
+      </ol>
+    </div>
+  </div>
+  </div>
+
+<div class="col">
+
+    <div class="card" style="width: 35rem; border-color: red;">
+        <p class="card-text"><strong>Bu turu satın almak istermisiniz ?</strong></p>
+        <ol>
+        <p class="card-text"><strong><h3>Fiyat:2.000TL</h3></strong></p>
+        </ol>
+        <a href="{% url 'tatilturapp:caseçanakkale' %}" class="btn btn-danger">Satın Al</a>
+    </div>
+</div>
+
+</div>
+
+<br>
+
+{% endblock %}

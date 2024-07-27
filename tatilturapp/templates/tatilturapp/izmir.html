@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br><br><br>
+
+<h1><strong>İzmir Turu Sayfası</strong></h1>
+
+<br>
+
+<div class="row">
+
+<div class="col">
+<div class="card" style="width: 50rem; height: 50rem; border-color: green;">
+    <img src="{% static 'tatilturapp/izmir1.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><strong>Tur Rotası Bilgisi</strong></h5>
+      <ol>
+      <p class="card-text">Turumuz Konak Meydanı ile başlayacak , ardından Saat Kulesi ile devam edecek ve en son İzmir içindeki müzeler ile son bulacaktır. </p>
+      <p class="card-text">Tur , içinde toplamda 4 tur hocası ve 30 kişilik ekipler halinde gerçekleşecektir.</p>
+      </ol>
+    </div>
+  </div>
+  </div>
+
+<div class="col">
+    <div class="card" style="width: 50rem; height: 45rem; border-color: green;">
+        <img src="{% static 'tatilturapp/izmir2.jpeg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Turdaki Dinlenme ve Yemek Yerleri</strong></h5>
+          <ol>
+          <p class="card-text">İlk , ikinci ve üçüncü günde üç tane olmak üzere toplamda dokuz tane dinlenme yeri tur içinde olacaktır.</p>
+          <p class="card-text">Yemek yeri olarak ise tur içindeki dinlenme yerinde sağlanacak ve her bir mola 90 dakika olacaktır.</p>
+          </ol>
+        </div>
+      </div>
+</div>
+</div>
+
+<br>
+
+<div class="row">
+
+    <div class="col">
+        <div class="card" style="width: 50rem; height: 45rem; border-color: green;">
+            <img src="{% static 'tatilturapp/izmir3.jpeg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Tur Hediyeleri</strong></h5>
+              <ol>
+              <p class="card-text">Tur bitiminde sizlere turdaki gidilen yerler hakkında bilgi kitapçığı , anahtarlık ve bileklik gibi bir sürü hediye sağlanacaktır.</p>
+              </ol>
+            </div>
+          </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 35rem; border-color: green;">
+            <p class="card-text"><strong>Bu turu satın almak istermisiniz ?</strong></p>
+            <ol>
+            <p class="card-text"><strong><h3>Fiyat:2.500TL</h3></strong></p>
+            </ol>
+            <a href="{% url 'tatilturapp:caseizmir' %}" class="btn btn-danger">Satın Al</a>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+{% endblock %}

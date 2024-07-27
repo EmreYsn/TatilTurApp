@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br><br><br>
+
+<h1><strong>Kasa</strong></h1>
+
+<br>
+
+<h4 class="mb-3">Ürün Bilgileri</h4>
+<form class="needs-validation" novalidate>
+    <div class="row g-3">
+        <div class="col-sm-6">
+            <label class="form-label"><strong>Adana Turu</strong></label>
+            <br>
+            <a href="{% url 'tatilturapp:adana' %}"><img src="{% static 'tatilturapp/adana4.jpeg' %}" style="width: 15rem;"></a>
+            <br>
+            <label class="form-label"><strong><h3>Fiyat:1.750TL</h3></strong></label>
+        </div>
+    </div>
+</form>
+
+<div class="col-md-7 col-lg-8">
+    <h4 class="mb-3">Fatura Bilgileri</h4>
+    <form class="needs-validation" novalidate>
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">Ad</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            Adınız girmeniz gereklidir.
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <label for="lastName" class="form-label">Soyad</label>
+          <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+          <div class="invalid-feedback">
+            Soyadınızı girmeniz gereklidir.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="address" class="form-label">Adres</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Ana Caddesi" required>
+          <div class="invalid-feedback">
+            Lütfen adresinizi giriniz.
+          </div>
+        </div>
+
+      <hr class="my-4">
+
+      <h4 class="mb-3">Ödeme Bilgileri</h4>
+
+      <div class="my-3">
+        <div class="form-check">
+          <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+          <label class="form-check-label" for="credit">Kredi Kartı</label>
+        </div>
+        <div class="form-check">
+          <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+          <label class="form-check-label" for="debit">Banka Kartı</label>
+        </div>
+        <div class="form-check">
+          <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+          <label class="form-check-label" for="paypal">PayPal</label>
+        </div>
+      </div>
+
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <label for="cc-name" class="form-label">Kartın Üzerindeki Ad</label>
+          <input type="text" class="form-control" id="cc-name" placeholder="" required>
+          <small class="text-body-secondary">Bütün adı girmeniz gerekir.</small>
+          <div class="invalid-feedback">
+            Kartın Üzerindeki Adı girmeniz gereklidir.
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="cc-number" class="form-label">Kredi Kartı Numarası</label>
+          <input type="text" class="form-control" id="cc-number" placeholder="" required>
+          <div class="invalid-feedback">
+            Kredi Kartı Numarasını girmeniz önemlidir.
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="cc-expiration" class="form-label">Son Kullanma Tarihi</label>
+          <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+          <div class="invalid-feedback">
+            Lütfen son kullanma tarihini giriniz.
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <label for="cc-cvv" class="form-label">CVV</label>
+          <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+          <div class="invalid-feedback">
+            Lütfen güvenlik kodunu giriniz.
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <button class="w-100 btn btn-primary btn-lg" type="submit">Ödeme</button>
+    </form>
+  </div>
+</div>
+</div>
+
+<script src="{% static 'tatilturapp/checkout.js' %}"></script></body>
+
+{% endblock %}

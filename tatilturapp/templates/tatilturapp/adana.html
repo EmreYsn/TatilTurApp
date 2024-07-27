@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br><br><br>
+
+<h1><strong>Adana Turu Sayfası</strong></h1>
+
+<br>
+
+<div class="row">
+
+    <div class="col">
+        <div class="card" style="width: 50rem; height: 45rem; border-color: darkblue;">
+            <img src="{% static 'tatilturapp/adana1.jpeg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Tur Rotası Bilgisi</strong></h5>
+              <ol>
+              <p class="card-text">Turumuz Taşköprü üzerinde başlayacak , ardından Büyük Saat Kulesi ile devam edecek ve en son Seyhan Merkez Park ile çeşitli plajlar eşliğinde son bulacaktır.</p>
+              <p class="card-text">Tur , içinde toplamda 3 tur hocası olacak ve 30 kişilik ekipler halinde gerçekleşecektir.</p>
+              </ol>
+            </div>
+          </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 50rem; height: 45rem; border-color: darkblue;">
+            <img src="{% static 'tatilturapp/adana2.jpeg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Turdaki Dinlenme ve Yemek Yeme Yerleri</strong></h5>
+              <ol>
+              <p class="card-text">İlk ve ikinci gün üç tane ve sonuncu gün de iki tane olmak üzere toplamda sekiz tane dinlenme yeri tur içinde olacaktır.</p>
+              <p class="card-text">Yemek yeri olarak ise tur içindeki dinlenme yerinde sağlanacak ve her bir mola 90 dakika olacaktır.</p>
+              </ol>
+            </div>
+          </div>
+    </div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+    <div class="col">
+        <div class="card" style="width: 50rem; height: 45rem; border-color: darkblue;">
+            <img src="{% static 'tatilturapp/adana3.jpeg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Tur Hediyeleri</strong></h5>
+              <ol>
+              <p class="card-text">Tur bitiminde sizlere turdaki gidilen yerler hakkında bilgi kitapçığı , anahtarlık ve bileklik gibi bir sürü hediye sağlanacaktır.</p>
+              </ol>
+            </div>
+          </div>
+    </div>
+
+    <div class="col">
+        <div class="card" style="width: 35rem; border-color: darkblue;">
+            <div class="card-body">
+                <p class="card-text"><strong>Bu turu satın almak istermisiniz ?</strong></p>
+                <ol>
+                <p class="card-text"><strong><h3>Fiyat:1.750</h3></strong></p>
+                </ol>
+                <a href="{% url 'tatilturapp:caseadana' %}" class="btn btn-danger">Satın Al</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<br>
+
+{% endblock %}

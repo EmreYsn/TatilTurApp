@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<br><br><br>
+
+<h1><strong>Favoriler</strong></h1>
+
+<br>
+
+<div id="carouselExampleCaptions4" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="{% url 'tatilturapp:antalya' %}"><img src="{% static 'tatilturapp/antalya1.jpeg' %}" class="d-block w-100" alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: turquoise;"><strong>Antalya</strong></h5>
+        <p style="background-color: turquoise;">Kurşunlu Şelalesi ve Karaalioğlu Parkı da dahil birçok yeri program içinde mevcuttur.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="{% url 'tatilturapp:antalya' %}"><img src="{% static 'tatilturapp/antalya2.jpeg' %}" class="d-block w-100" alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: turquoise;"><strong>Antalya</strong></h5>
+        <p style="background-color: turquoise;">Program 4 günlük bir süreyi kapsamaktadır.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="{% url 'tatilturapp:antalya' %}"><img src="{% static 'tatilturapp/antalya3.jpeg' %}" class="d-block w-100" alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: turquoise;"><strong>Antalya</strong></h5>
+        <p style="background-color: turquoise;">Tur içinde toplam 150 kişi olacaktır.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<br>
+
+<div id="carouselExampleCaptions3" class="carousel slide">
+  <div class="carousel-indicators" id="izmir">
+    <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="{% url 'tatilturapp:izmir' %}"><img src="{% static 'tatilturapp/izmir1.jpeg' %}" class="d-block w-100 " alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: green;"><strong>İzmir</strong></h5>
+        <p style="background-color: green;">Konak Meydanı ve Saat Kulesi de dahil birçok ter tur programı içinde mevcuttur.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="{% url 'tatilturapp:izmir' %}"><img src="{% static 'tatilturapp/izmir2.jpeg' %}" class="d-block w-100 " alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: green;"><strong>İzmir</strong></h5>
+        <p style="background-color: green;">Program 3 günlük bir süreyi kapsamaktadır.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="{% url 'tatilturapp:izmir' %}"><img src="{% static 'tatilturapp/izmir3.jpeg' %}" class="d-block w-100 " alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: green;"><strong>İzmir</strong></h5>
+        <p style="background-color: green;">Tur içinde toplam 120 kişi olacaktır.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<br>
+
+<div id="carouselExampleCaptions5" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="{% url 'tatilturapp:istanbul' %}"><img src="{% static 'tatilturapp/istanbul1.jpeg' %}" class="d-block w-100" alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: yellowgreen;"><strong>İstanbul</strong></h5>
+        <p style="background-color: yellowgreen;">Topkapı Sarayı , Yerebatan Sarnıcı ve Kız Kulesi de dahil birçok yeri program içinde mevcuttur.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="{% url 'tatilturapp:istanbul' %}"><img src="{% static 'tatilturapp/istanbul2.jpeg' %}" class="d-block w-100" alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: yellowgreen;"><strong>İstanbul</strong></h5>
+        <p style="background-color: yellowgreen;">Program 4 günlük bir süreyi kapsamaktadır.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="{% url 'tatilturapp:istanbul' %}"><img src="{% static 'tatilturapp/istanbul3.jpeg' %}" class="d-block w-100" alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: yellowgreen;"><strong>İstanbul</strong></h5>
+        <p style="background-color: yellowgreen;">Tur içinde toplam 180 kişi olacaktır.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions5" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<br>
+
+<div id="carouselExampleCaptions6" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="{% url 'tatilturapp:muğla' %}"><img src="{% static 'tatilturapp/muğla1.jpeg' %}" class="d-block w-100" alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: purple;"><strong>Muğla</strong></h5>
+        <p style="background-color: purple;">Bodrum , Marmaris ve Fethiye de dahil birçok yeri program içinde mevcuttur.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="{% url 'tatilturapp:muğla' %}"><img src="{% static 'tatilturapp/muğla2.jpeg' %}" class="d-block w-100" alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: purple;"><strong>Muğla</strong></h5>
+        <p style="background-color: purple;">Program 3 günlük bir süreyi kapsamaktadır.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="{% url 'tatilturapp:muğla' %}"><img src="{% static 'tatilturapp/muğla3.jpeg' %}" class="d-block w-100" alt="..." style="width: 40rem; height: 35rem;"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="background-color: purple;"><strong>Muğla</strong></h5>
+        <p style="background-color: purple;">Tur içinde toplam 90 kişi olacaktır.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions6" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<br>
+
+{% endblock %}
